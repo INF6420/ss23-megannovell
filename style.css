@@ -1,167 +1,50 @@
+
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
-.header_main {
-	width: 100%;
+/*body {
+    background-color: D3E4F1;
+    color: 041A2A
+    font-family: -apple-system, BlinkMacSystemFont, "Wegoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", Wegoe UI Emoji", "Segoe UI Symbol";
 }
 
-.header_image {
-	width: 100%;
-	height: 100px;
+a {
+    color: DE71C5
 }
 
-.header_nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	width: 100%;
+img {
+    max-width: 100%;
 }
 
-.header_nav li {
-  	float: left;
-  	width: 25%;
-	text-align: center;
+address {
+    font-style: normal;
+} */
+
+main {
+    padding: 1rem 1rem 2rem;
 }
 
-.header_nav li a {
-	display: block;
-	padding: 8px;
-	background-color: #dddddd;
-	text-decoration: none;
-	text-transform: uppercase;
+footer {
+    padding: 1rem;
+    background-color:aliceblue;
+    color: white;
 }
 
-.main_index .item1 {
-	grid-area: left;
-	font-size: 30px;
-	background-color: gray;
-}
-.main_index .item2 {
-	grid-area: right;
-	background-color: gray;
-}
-.main_index .item3 {
-	grid-area: middle;
-	background-color: gray;
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.main_index .grid_container {
-	width: 90vw;
-	display: grid;
-	grid-template-areas:
-		'left left left right right right'
-		'middle middle middle middle middle middle';
-	gap: 10px;
-	padding: 10px;
-	background-color: white;
+.main-menu {
+    position: relative;
 }
 
-.main_index .grid_container > div {
-	text-align: center;
-	padding: 20px 0;
-}
-
-.janky {
-	color: red;
-}
-
-.footer {
-	position: fixed;
-	bottom: 0px;
-	left: 5vw;
-	width: 90vw;
-	background-color: gray;
-}
-
-.main_about .item1 {
-	grid-area: photo1;
-	background-color: gray;
-}
-.main_about .item1 img {
-	width: 100px;
-}
-.main_about .item2 {
-	grid-area: photo2;
-	background-color: gray;
-}
-.main_about .item2 img {
-	width: 100px;
-}
-.main_about .item3 {
-	grid-area: photo3;
-	background-color: gray;
-}
-.main_about .item3 img {
-	width: 100px;
-}
-.main_about .item4 {
-	grid-area: photo4;
-	background-color: gray;
-}
-.main_about .item4 img {
-	width: 100px;
-}
-.main_about .item5 {
-	grid-area: right;
-	background-color: gray;
-}
-
-.main_about .grid_container {
-	width: 90vw;
-	display: grid;
-	grid-template-areas:
-		'photo1 photo2 right right right right'
-		'photo3 photo4 right right right right';
-	gap: 10px;
-	padding: 10px;
-	background-color: white;
-}
-
-.main_about .grid_container > div {
-	text-align: center;
-	padding: 20px 0;
-}
-
-.main_contact .item1 {
-	grid-area: left;
-	font-size: 30px;
-	background-color: gray;
-}
-.main_contact .item2 {
-	grid-area: right1;
-	background-color: gray;
-}
-.main_contact .item3 {
-	grid-area: right2;
-	background-color: gray;
-}
-.main_contact .item4 {
-	grid-area: right3;
-	background-color: gray;
-}
-.main_contact .item5 {
-	grid-area: right4;
-	background-color: gray;
-}
-
-.main_contact .grid_container {
-	width: 90vw;
-	display: grid;
-	grid-template-areas:
-		'left left right1 right1 right1 right1'
-		'left left right2 right2 right2 right2'
-		'left left right3 right3 right3 right3'
-		'left left right4 right4 right4 right4';
-	gap: 10px;
-	padding: 10px;
-	background-color: white;
-}
-
-.main_contact .grid_container > div {
-	text-align: center;
-	padding: 20px 0;
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
 }
