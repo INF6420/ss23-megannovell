@@ -9,7 +9,7 @@
 <body>
     <header class="header_main">
         <nav>
-            <img src="images/IMG_2209.jpeg" alt="Megan Novell logo" class="header_image">
+            <div class="header_image"></div>
             <ul class="header_nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,21 +22,23 @@
         <main class="main_contact">
             <div class="grid_container">
                 <div class="item1">
-                    <h1>
-                        Find Me
-                    </h1>
+                    <h2>
+                        Contact Megan
+                    </h2>
                 </div>
                 <div class="item2">
-                    email
-                </div>
-                <div class="item3">
-                    phone
-                </div>
-                <div class="item4">
-                    social
-                </div>
-                <div class="item5">
-                    physical
+                    <form class="validate" id="contact_form" action="https://formspree.io/f/mgejeqza" method="post">
+                        <label for="name" class="form_label">Name</label>
+                        <input name="Name" id="name" type="text" class="form_input" required>
+                        <br />
+                        <label for="email" class="form_label">Email</label>
+                        <input name="Email" id="email" type="email" class="form_input" required>
+                        <br />
+                        <label for="message" class="form_label">Message</label>
+                        <textarea name="Message" id="message" class="form_textarea" rows="4" required></textarea>
+                        <br />
+                        <button type="submit" class="form_submit">submit</button>
+                    </form>
                 </div>
             </div>
         </main>
@@ -57,4 +59,5 @@
         </footer>
     </center>
 </body>
+<script src="script.js"></script>
 </html>
